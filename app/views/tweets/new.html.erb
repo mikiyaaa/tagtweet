@@ -6,7 +6,9 @@
     </div>
     <div class="tag-field" id='tag-field'>
       <%= f.label :name, "タグ" %>
-      <%= f.text_field :name, class: "input-tag" %>
+      <%= f.text_field :name, class: "input-tag", autocomplete: "off" %>
+    </div>
+    <div id="search-result">
     </div>
     <div class="submit-post">
       <%= f.submit "Send", class: "submit-btn" %>
